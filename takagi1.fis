@@ -1,0 +1,69 @@
+[System]
+Name='takagi1'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='min'
+OrMethod='max'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='Regeldifferenz_winkel'
+Range=[-3.14159265358979 3.14159265358979]
+NumMFs=5
+MF1='NB':'trimf',[-4.712 -3.142 -1.571]
+MF2='NS':'trimf',[-3.142 -1.571 0]
+MF3='Z':'trimf',[-1.571 0 1.571]
+MF4='PS':'trimf',[0 1.571 3.142]
+MF5='PB':'trimf',[1.571 3.142 4.712]
+
+[Input2]
+Name='Regeldifferenz_radius'
+Range=[0 0.225]
+NumMFs=5
+MF1='VS':'trimf',[-0.05625 0 0.05625]
+MF2='MS':'trimf',[0 0.05625 0.1125]
+MF3='M':'trimf',[0.05625 0.1125 0.1688]
+MF4='MB':'trimf',[0.1125 0.1688 0.225]
+MF5='VB':'trimf',[0.1688 0.225 0.2812]
+
+[Output1]
+Name='Spannung_u'
+Range=[-48 48]
+NumMFs=5
+MF1='NB':'constant',[-27.2]
+MF2='NS':'constant',[-12]
+MF3='Z':'constant',[0]
+MF4='PS':'constant',[12]
+MF5='PB':'constant',[27.2]
+
+[Rules]
+1 1, 2 (1) : 1
+2 1, 2 (1) : 1
+3 1, 3 (1) : 1
+4 1, 4 (1) : 1
+5 1, 4 (1) : 1
+1 2, 2 (1) : 1
+2 2, 2 (1) : 1
+3 2, 3 (1) : 1
+4 2, 4 (1) : 1
+5 2, 4 (1) : 1
+1 3, 1 (1) : 1
+2 3, 2 (1) : 1
+3 3, 3 (1) : 1
+4 3, 4 (1) : 1
+5 3, 5 (1) : 1
+1 4, 1 (1) : 1
+2 4, 2 (1) : 1
+3 4, 3 (1) : 1
+4 4, 4 (1) : 1
+5 4, 5 (1) : 1
+1 5, 1 (1) : 1
+2 5, 1 (1) : 1
+3 5, 3 (1) : 1
+4 5, 5 (1) : 1
+5 5, 5 (1) : 1
