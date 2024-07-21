@@ -11,7 +11,6 @@ Meine Arbeit befasste sich mit der Verbesserung der Produktverteilung auf dem Ve
 Durch [Simulation](fuzzySimulateWithConstInput.m) über alle möglichen Abwurfpositionen konnten beide Fuzzy-Regler validiert werden. Beide Regler zeigten dabei sehr gute Ergebnisse (siehe Abb. 2), wobei grüne und gelbe Abwurfunkte für erfolgreiche Regelungssimulationen und rote nicht erfolgreich waren. Für die Regelung mehrerer Partikel wurde ein erster [Simulationsversuch](multiFuzzySimulateWithConstInput.m) unternommen.
 
 <img src="docs/mamdani.png" width="49%" height="50%">  <img src="docs/takagi.png" width="49%" height="50%"> 
-| :--: |
 | Abb.2.: Ergebnisse Mamdani-Fuzzy-Regler (links) und Takagi-Fuzzy-Regler (rechts) |
 
 Der Code meiner Bachelorarbeit kann in folgendem Repository eingesehen werden: [Repository](https://github.com/alexandernit/github-portfolio)
