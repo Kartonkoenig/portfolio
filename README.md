@@ -2,7 +2,7 @@
 
 ## Bachelorarbeit: Entwurf einer Fuzzy-Regelung für den rotatorischen Verteilteller einer Mehrkopfwaage
 
-Change language here: [![en](https://img.shields.io/badge/lang-en-red)](README.en.html)
+### &#8595; ***English version further down!*** &#8595;
 
 Der Code meiner Bachelorarbeit kann in folgendem Repository eingesehen werden: [Repository](https://github.com/alexandernit/github-portfolio)
 
@@ -19,4 +19,18 @@ Durch Simulation (*fuzzySimulateWithConstInput.m*) über alle möglichen Abwurfp
 <img src="docs/mamdani.png" width="49%" height="50%">  <img src="docs/takagi.png" width="49%" height="50%"> 
 Abb.2.: Ergebnisse Mamdani-Fuzzy-Regler (links) und Takagi-Fuzzy-Regler (rechts)
 
+<br/><br/>
+## Bachelor's Thesis: Design of a Fuzzy Controller for the Rotating Distribution Plate of a Multihead Weigher
+The code for my bachelor's thesis can be found in the following repository: [Repository](https://github.com/alexandernit/github-portfolio)
 
+My thesis focused on improving the product distribution on the distribution plate of a multihead weigher (see Fig. 1) by implementing two fuzzy controllers that enable precise product discharge from the plate onto a dosing chute. The existing model was extended (*dynamics.m*) to account for the dynamics of a DC motor and the feedback effects of particles. Additionally, the movement of multiple particles (*multidynamics.m*) on the distribution plate was examined. Two control concepts were developed: a Mamdani fuzzy controller (*mamdani2.fis*) and a Takagi-Sugeno fuzzy controller (*takagi1.fis*).
+
+| ![Waage](docs/ezgif.com-optimize.gif) |
+| :--: |
+| Fig.1.: Weighing process of a multihead weigher |
+|*(Video Source: https://youtu.be/TVnA-7kJC74?si=OCO03Gl8Bz4dd9fg)* |
+
+Through simulations (*fuzzySimulateWithConstInput.m*) across all possible discharge positions, both fuzzy controllers were validated. Both controllers showed very good results (see Fig. 2), with green and yellow discharge points indicating successful control simulations and red indicating unsuccessful ones. An initial simulation attempt (*multiFuzzySimulateWithConstInput.m*) was also made for controlling multiple particles.
+
+<img src="docs/mamdani.png" width="49%" height="50%">  <img src="docs/takagi.png" width="49%" height="50%"> 
+Fig.2.: Results for Mamdani fuzzy controller (left) and Takagi-Sugeno fuzzy controller (right)
