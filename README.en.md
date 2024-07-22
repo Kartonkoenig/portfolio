@@ -1,3 +1,3 @@
-[![de](https://img.shields.io/badge/lang-de-blue)](https://github.com/alexandernit/github-portfolio/README.md)
+[![de](https://img.shields.io/badge/lang-de-blue)](README.md)
 
 English Readme
