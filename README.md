@@ -2,7 +2,7 @@
 
 ## Bachelorarbeit: Entwurf einer Fuzzy-Regelung für den rotatorischen Verteilteller einer Mehrkopfwaage
 
-Change language here: [![en](https://img.shields.io/badge/lang-en-red)](README.en.md)
+Change language here: [![en](https://img.shields.io/badge/lang-en-red)](README.en.html)
 
 Der Code meiner Bachelorarbeit kann in folgendem Repository eingesehen werden: [Repository](https://github.com/alexandernit/github-portfolio)
 
